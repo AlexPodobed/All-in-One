@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Test Calc with MVC</title>
+		<link rel="stylesheet" href="css/style.css" >
+		<script src="js/Calculator/Calculator.Model.js"></script>
+		<script src="js/Calculator/Calculator.Controller.js"></script>
+		<script src="js/Timer/ClockModel.js"></script>
+		<script src="js/Timer/DragAndDropModel.js"></script>
+		<script src="js/Timer/ClockController.js"></script>
+		<script src="js/Timer/DragNDropController.js"></script>
+		<script src="js/Converter/ConverterModel.js"></script>
+		<script src="js/Converter/ConverterController.js"></script>
+		<script src="js/run.js"></script>
+	</head>
+
+	<body>
+		<div class="calc-wrapper">
+			<div class="input-place">
+				Число1 :<input type="text" id="first-number">
+				Число2 :<input type="text" id="second-number">
+			</div>
+			<div class="operation">
+				<span id="minus">-</span>
+				<span id="summ">+</span>
+				<span id="multiply">*</span>
+				<span id="devide">/</span>
+			</div>
+			<div class="result">
+				Результат: <input type="text" id="result">
+			</div>
+		</div>
+
+		<div class="converter-wrapper">
+			<h2>Binary  and Decimal <span class="make-bold">Converter</span></h2>
+			<p>
+				<input type="text" id="number-in-dec" placeholder="Enter the number"/>
+			</p>
+			<p>
+				<button id="converter-bin-btn">Convert To Bin</button>
+				<button id="converter-dec-btn">Convert To Dec</button>
+			</p>
+			<p>
+				<input type="text" id="convert-result" placeholder="Result" />
+			</p>
+		</div>
+		<div class="clear"></div>
+		<div id="timer-wrapper">
+			<h2>Time now:</h2>
+			<div id="clock-block"></div>
+		</div>
+
+	</body>
+
+</html>

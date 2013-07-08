@@ -1,0 +1,132 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	height: 800px;
+}
+
+.clear{
+	clear: both;
+}
+
+/*--------C A L C U L A T O R ----------*/
+
+.calc-wrapper{
+	outline: 1px solid black;
+	width: 300px;
+	margin: 10px;
+	padding: 10px;
+	float: left;
+}
+	.calc-wrapper .input-place{
+		padding: 10px;
+	}
+		.calc-wrapper .input-place input{
+			width: 55px;
+			margin: 0 10px;
+		}
+	.calc-wrapper .operation{
+		padding: 10px;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+	}
+		.calc-wrapper .operation span{
+			display: inline-block;
+			border: 1px solid black;
+			width: 57px;
+			height: 20px;
+			vertical-align:  bottom;
+			background-color: silver;
+			padding-bottom: 3px;
+		}
+		.calc-wrapper .operation span:hover{
+			cursor: pointer;
+			background-color: black;
+			color: white;
+		}
+	.calc-wrapper .result{
+		padding: 10px;
+	}
+		.calc-wrapper .result input{
+			width: 190px;
+		}
+
+
+/*-------T I M E R -----------*/
+
+#timer-wrapper{
+	margin: 10px;
+	border: 2px solid #6C7B8B;
+	width: 330px;
+	font-family: Verdana;
+	font-style: italic;
+	border-radius: 14px;
+	box-shadow: 5px 5px 12px silver;
+}
+	#timer-wrapper h2{
+		border-top-right-radius: 12px;
+		border-top-left-radius: 12px;
+		padding: 2px 20px;
+		background-color: #8B658B;
+		color: #F5F5F5;
+		border-bottom: 2px solid black;
+	}
+
+	#clock-block{
+		color: #4F4F4F;
+		padding: 10px 15px;
+		font-size: 50px;
+		text-align: center;
+		background-color: #F5F5F5;
+		border-bottom-right-radius: 12px;
+		border-bottom-left-radius: 12px;
+	}
+
+/*--------C O N V E R T E R-----------*/
+
+.converter-wrapper{
+	width: 450px;
+	font-family: Verdana;
+	font-style: italic;
+	float: left;
+}
+	.converter-wrapper h2{
+		padding: 0;
+		font-size: 36px;
+	}
+	.converter-wrapper .make-bold{
+		font-weight: bold;
+		font-size: 48px;
+	}
+	.converter-wrapper p, .converter-wrapper h2{
+		margin: 5px 0;
+		text-align: center;
+	}
+	.converter-wrapper input{
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		background-color: black;
+		border-radius: 10px;
+		color:  silver;
+		font-family: Verdana;
+		font-size: 14px;
+		font-style: italic;
+		height: 45px;
+		padding-left: 20px;
+		width: 250px;
+
+	}
+	.converter-wrapper button{
+	    text-align: center;
+		width: 135px;
+		height: 40px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		font-size: 16px;
+		font-style: italic;
+		background: -moz-linear-gradient(top, rgb(226,226,226) 16%, rgb(244,244,244) 100%, rgb(32,124,202) 100%, rgb(125,185,232) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,rgb(226,226,226)), color-stop(100%,rgb(244,244,244)), color-stop(100%,rgb(32,124,202)), color-stop(100%,rgb(125,185,232))); /* Chrome,Safari4+ */
+	}
